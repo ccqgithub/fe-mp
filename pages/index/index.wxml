@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view>
+  <view>
+    loginUser: {{ loginUser ? loginUser.name : '' }}
+  </view>
+  <view>
+    item is: {{ item }}
+  </view>
+  <view>
+    <button bindtap="selectItem">select item</button>
+  </view>
+</view>

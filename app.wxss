@@ -1,0 +1,30 @@
+/**app.wxss**/
+view,
+cover-view,
+button,
+text,
+input,
+swiper,
+swiper-item {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: none;
+  white-space: normal;
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+button::after {
+  content: none;
+}
+
+page {
+  font-family: "PingFang SC", "lucida grande", "lucida sans unicode", lucida,
+    "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Heiti SC",
+    "Microsoft YaHei", "WenQuanYi Micro Hei", "Source Han Sans", sans-serif;
+  font-size: 14px;
+  color: #3a4a4a;
+  min-height: 100%;
+  box-sizing: border-box;
+}

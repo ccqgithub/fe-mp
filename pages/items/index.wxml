@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view>
+  <view wx:for="{{ items }}" wx:for-index="idx" wx:key="idx" bindtap="select" data-index="{{ idx }}">
+    {{ item }} <button>select</button>
+  </view>
+</view>
