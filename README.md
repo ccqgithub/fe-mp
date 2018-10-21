@@ -129,7 +129,7 @@ onShow() {
 ## 数据对象 $data
 
 ```js
-import {Data} from './core/index;
+import {Data} from './core/index';
 
 const $data = new Data();
 ```
