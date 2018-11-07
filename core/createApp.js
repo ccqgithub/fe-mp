@@ -39,6 +39,7 @@ export default function createApp(opts = {}) {
       onLaunch.bind(this)(options);
     },
     onShow(options = {}) {
+      this._show_count = this._show_count ? this._show_count + 1 : 1;
       let scene = decodeURIComponent(options.scene || '');
 
       // 最后一次存在的场景值
@@ -47,7 +48,10 @@ export default function createApp(opts = {}) {
       if (scene) this.$data.set('lastScene', scene);
 
       // on show
-      onShow.bind(this)(options);
+      onShow.bind(this)({
+        ...options,
+        count: this._show_count,
+      });
     },
   });
 }

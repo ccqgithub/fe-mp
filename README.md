@@ -11,8 +11,8 @@ createApp({
   onLaunch(options) {
     //
   },
-  onShow(options) {
-    //
+  onShow({ scene, count, ...args }) {
+    // count: invoke onshow counts
   },
   // 获取当前语言
   onLanguage() {
@@ -49,8 +49,8 @@ createPage({
   onLoad(options) {
     //
   },
-  onShow(options) {
-    //
+  onShow({ count }) {
+    // count: invoke onshow counts
   },
   onReady() {
     //
