@@ -107,7 +107,7 @@ onSelectItem(item) {
 ```js
 // home page
 onShow() {
-  this.getTempData('select-item-back', (data) => {
+  app.getTempData('select-item-back', (data) => {
     this.setData({ item: data });
   });
 }
