@@ -31,7 +31,7 @@ export default function extendApp(app) {
 
     wx.navigateBack({
       ...args,
-      delta: i + 1,
+      delta: i,
     });
   };
 
