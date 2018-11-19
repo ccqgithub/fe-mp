@@ -49,7 +49,7 @@ createPage({
   onLoad(options) {
     //
   },
-  onShow({ count }) {
+  onShow({ count, lastPage }) {
     // count: invoke onshow counts
   },
   onReady() {
