@@ -38,6 +38,7 @@ export default function createPage(opts = {}) {
       extendPage(this);
       // on load
       onLoad.bind(this)(options);
+      app._lastPage = this.name;
     },
     onShow(options = {}) {
       // show count
@@ -45,7 +46,9 @@ export default function createPage(opts = {}) {
 
       onShow.bind(this)({
         count: this._show_count,
+        lastPage: app._lastPage;
       });
+      app._lastPage = this.name;
     },
     onReady() {
       // set page custom title
